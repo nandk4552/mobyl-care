@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+
 :root {
     --bg-1: #a517ba;
     --bg-2: #5f1782;
@@ -258,6 +261,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1000;
 }
 
 #footer .social-icon,    
@@ -297,10 +301,20 @@ body {
     opacity: 1;
 }
 #footer p {
-    color: #fff;
+    color: #fff !important;
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: 1.1em;
+}
+#footer p span {
+    text-transform: none;
+    color: var(--white) !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+#footer p span small {
+    text-transform: none;
+    color: var(--color);
+    font-family: 'Ubuntu', sans-serif;
 }
 #footer .wave{
     position: absolute;
