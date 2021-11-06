@@ -6,7 +6,7 @@
     --light-black: #333;
     --white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
-    --border: 0 .5rem 1rem rgba(0,0,0,0.3);
+    --border: .1rem solid rgba(0,0,0,0.3);
 
 }
 * {
@@ -107,7 +107,6 @@ body {
     padding-bottom: 50px;
 }
 .service {
-
     padding: 25px 10px;
     border-radius: 5px;
     font-size: .9rem;
@@ -157,4 +156,27 @@ body {
 }
 #about ul{
     margin-left: 1.3rem;
+}
+
+
+/* =======testimonials section css====== */
+#testimonials {
+    margin: 100px 0;
+
+}
+.testimonials {
+    border-left: .1rem solid var(--bg-2);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonials i{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 60px;   
+    margin-right: 10px;
+}
+.user-details {
+    display: inline-block;
+    font-size: 1rem;
 }
