@@ -7,6 +7,11 @@
     --white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
     --border: .1rem solid rgba(0,0,0,0.3);
+    --fb: #1976d3;
+    --yt: #f44236;
+    --tw: #03a9f5;
+    --wp: #25D366;
+    --lnk: #0e76a8 ;
 
 }
 * {
@@ -179,4 +184,60 @@ body {
 .user-details {
     display: inline-block;
     font-size: 1rem;
+}
+
+/* social media section css */
+#social-media {
+    background: #f8f9fa;
+    padding: 100px 0;
+}
+#social-media p{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.icons a{
+    
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);  
+    background-size: 100% 200%;
+    background-position: 0%  5%;
+    z-index: 1000;
+    transition: background-position .2s linear, color .2    s linear;
+
+}
+.icons a:nth-child(1) {
+
+    color: var(--fb);
+    background-image: linear-gradient(#fff 50%, var(--fb) 50%);
+
+}
+.icons a:nth-child(2) {
+    background-image: linear-gradient(#fff 50%, var(--yt) 50%);
+    color: var(--yt)    ;
+}
+.icons a:nth-child(3) {
+    background-image: linear-gradient(#fff 50%, var(--tw) 50%);
+    color: var(--tw);
+}
+.icons a:nth-child(4) {
+    background-image: linear-gradient(#fff 50%, var(--wp) 50%);
+    color: var(--wp);
+}
+.icons a:nth-child(5) {
+    background-image: linear-gradient(#fff 50%, var(--lnk) 50%);
+    color: var(--lnk);
+}
+.icons a:hover{
+    background-position: 0%  100%;
+    color: #fff;
+    
 }
