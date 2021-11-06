@@ -11,7 +11,8 @@
     --yt: #f44236;
     --tw: #03a9f5;
     --wp: #25D366;
-    --lnk: #0e76a8 ;
+    --lnk: #0e76a8;
+    --snp: #FFFC00;
 
 }
 * {
@@ -199,15 +200,15 @@ body {
 .icons a{
     
     display: inline-flex;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-decoration: none;
     border-radius: 50%;
     margin: 10px;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);  
+    box-shadow: var(--box-shadow);  
     background-size: 100% 200%;
     background-position: 0%  5%;
     z-index: 1000;
@@ -236,8 +237,13 @@ body {
     background-image: linear-gradient(#fff 50%, var(--lnk) 50%);
     color: var(--lnk);
 }
+.icons a:nth-child(6) {
+    background-image: linear-gradient(#fff 50%, var(--snp) 50%);
+    color: var(--snp);
+}
 .icons a:hover{
     background-position: 0%  100%;
     color: #fff;
+    /* transform: translateY(-10px); */
     
 }
