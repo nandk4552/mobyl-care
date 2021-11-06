@@ -3,6 +3,7 @@
     --bg-1: #a517ba;
     --bg-2: #5f1782;
     --color: #ffbf00;
+    --light-black: #333;
     --white: #fff;
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
     --border: 0 .5rem 1rem rgba(0,0,0,0.3);
@@ -34,8 +35,8 @@ body {
 
 /* logo css */
 .navbar-brand img{
-    height: 40px; 
-    padding-left: 20px;
+    height: 45px; 
+    padding-left: 1.2rem;
 }
 .navbar-nav li {
     padding: 0 .8rem;
@@ -44,7 +45,6 @@ body {
     font-size: 1.2rem;
     color: var(--white) !important;
     font-weight: 500;
-    /* float: right; */
     text-align:center;
 }
 .navbar-nav li a:hover {
@@ -57,4 +57,29 @@ body {
 .navbar-toggler {
     outline: none !important;
     border: none;
+}
+/* banner section css */
+#banner {
+    background-color: var(--bg-1);
+    color: var(--white);
+    padding-top: 5%;
+}
+.promo-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+.play-btn {
+    width: 45px;
+    margin: 1.4rem;
+
+}
+#banner a{
+    color: #fff !important;
+}
+#banner p{
+    color: #fafafa !important;
+}
+.bottom-img {
+    width: 100%;
 }
