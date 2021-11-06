@@ -2,6 +2,11 @@
 :root {
     --bg-1: #a517ba;
     --bg-2: #5f1782;
+    --color: #ffbf00;
+    --white: #fff;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+    --border: 0 .5rem 1rem rgba(0,0,0,0.3);
+
 }
 * {
     margin: 0;padding: 0;
@@ -21,12 +26,35 @@ body {
 }
 
 .navbar {
-    background-image: linear-gradient(to right, var(--bg-1), var(--bg-2));
+    /* background-image: linear-gradient(to right, var(--bg-1), var(--bg-2)); */
+    background-color: var(--bg-1) !important;
     padding: 0 !important;
+    box-shadow: var(--box-shadow);
 }
 
 /* logo css */
 .navbar-brand img{
-    height: 40px;
+    height: 40px; 
     padding-left: 20px;
+}
+.navbar-nav li {
+    padding: 0 .8rem;
+}
+.navbar-nav li a {
+    font-size: 1.2rem;
+    color: var(--white) !important;
+    font-weight: 500;
+    /* float: right; */
+    text-align:center;
+}
+.navbar-nav li a:hover {
+    color: var(--color) !important;
+}
+.fa-bars {
+    color: var(--white) !important;
+    font-size: 2rem;
+}
+.navbar-toggler {
+    outline: none !important;
+    border: none;
 }
