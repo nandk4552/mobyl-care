@@ -261,7 +261,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1000;
 }
 
 #footer .social-icon,    
@@ -304,7 +303,7 @@ body {
     color: #fff !important;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-size: 1.1em;
+    font-size: .9rem;
 }
 #footer p span {
     text-transform: none;
@@ -327,7 +326,7 @@ body {
 }
 #footer .wave#wave1 {
     z-index: 1000;
-    opacity: 1;
+    opacity: .7;
     bottom: 0;
     animation: animateWave 4s linear infinite;
 }
