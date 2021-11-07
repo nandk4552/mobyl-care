@@ -44,6 +44,7 @@
     <!-- custom css file link -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- Navbar section starts -->
     <section id="nav-bar">
@@ -65,7 +66,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#banner">home</a>
+              <a class="nav-link" href="/">home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#services">services</a>
@@ -77,15 +78,37 @@
               <a class="nav-link" href="#testimonials">testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+              <a class="nav-link" href="#contact-us">contact</a>
             </li>
             <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-warning my-2 mx-2 my-sm-0" type="submit">Search</button>
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-warning my-2 mx-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
             </form>
-            <div class="mx-2 my-2"> 
-              <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
-              <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+            <div class="mx-2 my-2">
+              <button
+                class="btn btn-warning mx-2"
+                data-toggle="modal"
+                data-target="#loginModal"
+              >
+                Login
+              </button>
+              <button
+                class="btn btn-warning"
+                data-toggle="modal"
+                data-target="#signupModal"
+              >
+                SignUp
+              </button>
             </div>
           </ul>
         </div>
@@ -93,75 +116,222 @@
     </section>
     <!-- Navbar section ends -->
 
+    <!-- alert -->
+    <!-- <div style="z-index: 800;" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>under construction</strong> Website under process it will available soon
+  </div> -->
+
     <!-- login modal starts-->
-  
-      <!-- Modal -->
-      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="loginModalLabel">Login To</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+          <div class="modal-header">
+            <h5
+              class="modal-title d-flex justify-content-between"
+              id="loginModalLabel"
+            >
+              Login To
+              <p
+                class="mx-2"
+                style="
+                  font-family: 'Ubuntu', sans-serif;
+                  color: #a517ba;
+                  text-transform: none;
+                "
+              >
+                mobyl <small style="color: #ffbf00">care</small>
+              </p>
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form-signin">
+              <a class="navbar-brand my-2">
+                <img src="/images/images/logo-bg.png" alt="" />
+              </a>
+              <h1 class="h1 mb-3 font-weight-normal">Please sign in</h1>
+              <label for="inputEmail" class="sr-only my-2">Email address</label>
+              <input
+                type="email"
+                style="text-transform: none"
+                id="inputEmail"
+                class="form-control my-2"
+                placeholder="Email address"
+                required=""
+                autofocus=""
+              />
+              <label for="inputPassword" class="sr-only my-2">Password</label>
+              <input
+                type="password"
+                style="text-transform: none"
+                id="inputPassword"
+                class="form-control my-2"
+                placeholder="Password"
+                required=""
+              />
+              <div class="checkbox my-3" style="text-align: left">
+                <label>
+                  <input type="checkbox" value="remember-me" /> Remember me
+                </label>
+              </div>
+              <button
+                class="btn btn-lg btn-warning btn-block"
+                style="background-color: #a517ba; color: #fff"
+                type="submit"
+              >
+                Sign in
               </button>
-            </div>
-            <div class="modal-body">
-              <form class="form-signin">
-                <!-- <img class="mb-4" src="/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
-                <a class="navbar-brand" href="#">
-                  <img src="/images/images/logo.png" alt=""
-                /></a>
-                <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-                <label for="inputEmail" class="sr-only my-2">Email address</label>
-                <input type="email" id="inputEmail" class="form-control my-2" placeholder="Email address" required="" autofocus="">
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              style="background: #ffbf00; color: #222"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- login modal ends -->
+
+    <!-- signup modal starts-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title d-flex" id="signupModalLabel">
+              get an
+              <p
+                class="mx-2"
+                style="
+                  font-family: 'Ubuntu', sans-serif;
+                  color: #a517ba;
+                  text-transform: none;
+                "
+              >
+                mobyl <small style="color: #ffbf00">care</small>
+              </p>
+              account
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form-signin text-center">
+              <a class="navbar-brand my-2">
+                <img src="/images/images/logo-bg.png" alt="" />
+              </a>
+              <h1 class="h1 mb-3 font-weight-normal">Create account</h1>
+              <label for="inputEmail" class="sr-only my-2">Email address</label>
+              <input
+                type="email"
+                style="text-transform: none"
+                id="inputEmail"
+                class="form-control my-2"
+                placeholder="Email address"
+                required=""
+                autofocus=""
+              />
+              <div class="from-group">
                 <label for="inputPassword" class="sr-only my-2">Password</label>
-                <input type="password" id="inputPassword" class="form-control my-2" placeholder="Password" required="">
-                <div class="checkbox mb-3">
-                  <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                  </label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                <!-- <p class="mt-5 mb-3 text-muted">© 2017-2021</p> -->
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- login modal ends -->
-
-
-      <!-- signup modal starts-->
-      <!-- Button trigger modal -->
-      <!-- Modal -->
-      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="signupModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <input
+                  type="password"
+                  style="text-transform: none"
+                  id="inputPassword"
+                  class="form-control my-2"
+                  placeholder="Password"
+                  required=""
+                />
+              </div>
+              <div class="from-group">
+                <label for="cinputPassword" class="sr-only my-2"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  style="text-transform: none"
+                  id="cinputPassword"
+                  class="form-control my-2"
+                  placeholder="Confirm Password"
+                  required=""
+                />
+              </div>
+              <div class="from-group">
+                <label for="inputNumber" class="sr-only my-2"
+                  >Mobile number</label
+                >
+                <input
+                  type="number"
+                  style="text-transform: none"
+                  id="inputNumber"
+                  class="form-control my-2"
+                  placeholder="Mobile Number"
+                  required=""
+                />
+              </div>
+              <div class="checkbox my-3" style="text-align: left">
+                <label style="text-transform: none">
+                  <input type="checkbox" value="remember-me" /> Agree all terms
+                  and conditions
+                </label>
+              </div>
+              <button
+                class="btn btn-lg btn-light btn-block"
+                style="background-color: #a517ba; color: #fff"
+                type="submit"
+              >
+                Sign in
               </button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              style="background: #ffbf00; color: #222"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-      <!-- singup modal ends -->
-
-
-
-
+    </div>
+    <!-- singup modal ends -->
 
     <!-- banner section starts -->
 
@@ -327,6 +497,81 @@
       </div>
     </section>
 
+    <!-- contact us pages
+    <!-- -------contact us -------- -->
+    <!-- <section id="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3169819341!2d78.26795913240727!3d17.412299801362526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1631597871643!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section id="contact-us" class="my-5">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>XYZ Road, ABC Building</h5>
+              <p>Hyderabad, Telangana, IN</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+1 01234567789</h5>
+              <p>monday to saturday, 10AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5 style="text-transform: none;">caremobyl@gmail.com</h5>
+              <p>Email Us Your Query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary" style="background-color: #ffbf00; color: #000; outline: none; border: none;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section> --> -->
+
+    
+
+
+
+
     <!-- --------social media section ends----------- -->
 
     <!-- footer section starts -->
@@ -343,16 +588,24 @@
         <!-- social media icons with links -->
         <ul class="social-icon">
           <li>
-            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
           </li>
           <li>
-            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
           </li>
         </ul>
 
