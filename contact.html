@@ -89,6 +89,12 @@
               />
               <button
                 class="btn btn-outline-warning my-2 mx-2 my-sm-0"
+                style="
+                  outline: none !important;
+                  border: 1.5px solid #fff;
+                  color: #fff;
+                  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+                "
                 type="submit"
               >
                 Search
@@ -96,14 +102,14 @@
             </form>
             <div class="mx-2 my-2">
               <button
-                class="btn btn-warning mx-2"
+                class="btn btn-warning mx-2 y-btn"
                 data-toggle="modal"
                 data-target="#loginModal"
               >
                 Login
               </button>
               <button
-                class="btn btn-warning"
+                class="btn btn-warning y-btn"
                 data-toggle="modal"
                 data-target="#signupModal"
               >
@@ -316,7 +322,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-secondary y-btn"
               style="background: #ffbf00; color: #222"
               data-dismiss="modal"
             >
@@ -329,7 +335,58 @@
     <!-- singup modal ends -->
 
     <!-- contact us pages
-    <!-------contact us -------- -->
+    <!-- -----contact us -------- -->
+    <!-- contact form starts  -->
+    <div class="container mt-5">
+      <h1>Contact us for your concerns</h1>
+      <form action="/tutorials/28_form.php" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            style="text-transform: none !important"
+            name="name"
+            placeholder="Name"
+            class="form-control"
+            id="name"
+            aria-describedby="emailHelp"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            style="text-transform: none !important"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+          />
+          <div id="email" class="form-text" style="text-transform: none">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="desc" class="form-label">Description</label>
+          <textarea
+            style="text-transform: none !important"
+            class="form-control"
+            name="desc"
+            placeholder="Type your message..."
+            id="desc"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary b-btn">Submit</button>
+      </form>
+    </div>
+    <!-- contact form ends  -->
+
     <section id="location" class="container">
       <h3 class="text-center title" style="text-transform: none">Visit us</h3>
       <iframe
