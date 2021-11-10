@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google Auth -->
+    <meta
+      name="google-signin-client_id"
+      content="887049890545-1268fh2hmug5knm91i0h83bksbdacroh.apps.googleusercontent.com"
+    />
+
     <title>mobyl care | Mobile Repair and Sell</title>
 
     <!-- ion icons link -->
@@ -190,6 +196,14 @@
                 <label>
                   <input type="checkbox" value="remember-me" /> Remember me
                 </label>
+              </div>
+              <div
+                class="d-flex align-items-center justify-content-between my-4"
+              >
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <a href="#" class="btn btn-primary" onclick="signOut();"
+                  >Sign out</a
+                >
               </div>
               <button
                 class="btn btn-lg btn-warning btn-block"
@@ -413,7 +427,6 @@
 
     <!-- services section ends -->
 
-
     <!-- about section starts  -->
 
     <section id="about">
@@ -440,7 +453,6 @@
       </div>
     </section>
     <!-- about section ends  -->
-
 
     <!-- -------testimonial section starts------- -->
     <section id="testimonials">
@@ -477,8 +489,7 @@
 
     <!-- -------testimonial section ends------- -->
 
-    <!-- contact us pages
-    <!-- -----contact us -------- -->
+    <!------contact us -------- -->
     <!-- contact form starts  -->
     <section id="contact">
       <div class="container mt-5">
@@ -543,8 +554,7 @@
           loading="lazy"
         ></iframe>
       </section>
-  </section>
-
+    </section>
 
     <!-- --------social media section starts----------- -->
 
@@ -575,9 +585,6 @@
     </section>
 
     <!-- --------social media section ends----------- -->
-
-
-    
 
     <!-- footer section starts -->
     <section id="footer">
@@ -633,7 +640,15 @@
         </ul>
       </div>
 
-      <p class="text-left mx-5" >*** NOTE: <em> All product names, logos, and brands are property of their respective owners.<br> All company, product and service names used in this website are for identification purposes only.<br> Use of these names, logos, and brands does not imply endorsement.</em>
+      <p class="text-left mx-5">
+        *** NOTE:
+        <em>
+          All product names, logos, and brands are property of their respective
+          owners.<br />
+          All company, product and service names used in this website are for
+          identification purposes only.<br />
+          Use of these names, logos, and brands does not imply endorsement.</em
+        >
       </p>
 
       <!-- copyright text -->
@@ -643,5 +658,23 @@
       </p>
     </section>
     <!-- footer section ends -->
+
+    <!-- google Auth -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log("Name: " + profile.getName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
+      }
+      function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log("User signed out.");
+        });
+      }
+    </script>
   </body>
 </html>
