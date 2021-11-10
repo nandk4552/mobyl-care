@@ -69,22 +69,22 @@
               <a class="nav-link" href="/">home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">services</a>
+              <a class="nav-link" href="#services">services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">about</a>
+              <a class="nav-link" href="#about">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="testimonials.html">testimonials</a>
+              <a class="nav-link" href="#testimonials">testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">contact</a>
+              <a class="nav-link" href="#contact">contact</a>
             </li>
             <form class="form-inline my-2 my-lg-0">
               <input
                 class="form-control mr-sm-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Search here..."
                 aria-label="Search"
               />
               <button
@@ -203,7 +203,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-secondary y-btn"
               style="background: #ffbf00; color: #222"
               data-dismiss="modal"
             >
@@ -315,14 +315,14 @@
                 style="background-color: #a517ba; color: #fff"
                 type="submit"
               >
-                Sign in
+                Sign Up
               </button>
             </form>
           </div>
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-secondary y-btn"
               style="background: #ffbf00; color: #222"
               data-dismiss="modal"
             >
@@ -366,6 +366,186 @@
 
     <!-- banner section ends -->
 
+    <!-- services section starts -->
+
+    <section id="services" class="ml-auto">
+      <h1 class="title text-center">Our Services</h1>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 service">
+            <ion-icon name="laptop-outline"></ion-icon>
+            <h2>Screen Replacement</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+
+          <div class="col-md-4 service">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <h2>Sell old Mobile</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+
+          <div class="col-md-4 service">
+            <ion-icon name="color-palette-outline"></ion-icon>
+            <h2>Quick service</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+
+          <div class="col-md-4 service">
+            <ion-icon name="laptop-outline"></ion-icon>
+            <h2>Screen Replacement</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+
+          <div class="col-md-4 service">
+            <ion-icon name="stats-chart-outline"></ion-icon>
+            <h2>Sell old Mobile</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+
+          <div class="col-md-4 service">
+            <ion-icon name="color-palette-outline"></ion-icon>
+            <h2>Quick service</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+
+
+    <!-- about section starts  -->
+
+    <section id="about">
+      <div class="container">
+        <h1 class="title text-center my-4">about us</h1>
+
+        <div class="row">
+          <div class="col-md-6 about">
+            <p class="about-title">why we're different</p>
+            <ul>
+              <li>quick repair infront of customers</li>
+              <li>quick repair infront of customers</li>
+              <li>quick repair infront of customers</li>
+              <li>quick repair infront of customers</li>
+              <li>quick repair infront of customers</li>
+              <li>quick repair infront of customers</li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <img src="/images/img/network.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+
+
+    <!-- -------testimonial section starts------- -->
+    <section id="testimonials">
+      <div class="container">
+        <h1 class="title text-center mt-4">what our customers say</h1>
+        <div class="row offset-1">
+          <div class="col-md-5 testimonials">
+            <!-- demo user icon -->
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <p class="user-details">
+              <b>ajay</b><br />
+              co-founder at chirag ali Pvt Ltd
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              rem!
+            </p>
+          </div>
+          <div class="col-md-5 testimonials">
+            <!-- demo user icon -->
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <p class="user-details">
+              <b>Dunganna</b><br />
+              marketing at chirag ali Pvt Ltd
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa,
+              rem!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------testimonial section ends------- -->
+
+    <!-- contact us pages
+    <!-- -----contact us -------- -->
+    <!-- contact form starts  -->
+    <section id="contact">
+      <div class="container mt-5">
+        <h1>Contact us for your concerns</h1>
+        <form action="/tutorials/28_form.php" method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              style="text-transform: none !important"
+              name="name"
+              placeholder="Name"
+              class="form-control"
+              id="name"
+              aria-describedby="emailHelp"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              style="text-transform: none !important"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <div id="email" class="form-text" style="text-transform: none">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="desc" class="form-label">Description</label>
+            <textarea
+              style="text-transform: none !important"
+              class="form-control"
+              name="desc"
+              placeholder="Type your message..."
+              id="desc"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary b-btn">Submit</button>
+        </form>
+      </div>
+
+      <!-- contact form ends  -->
+
+      <section id="location" class="container">
+        <h3 class="text-center title" style="text-transform: none">Visit us</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3169819341!2d78.26795913240727!3d17.412299801362526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1631597871643!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </section>
+  </section>
+
+
     <!-- --------social media section starts----------- -->
 
     <section id="social-media">
@@ -395,6 +575,9 @@
     </section>
 
     <!-- --------social media section ends----------- -->
+
+
+    
 
     <!-- footer section starts -->
     <section id="footer">
@@ -449,6 +632,9 @@
           </li>
         </ul>
       </div>
+
+      <p class="text-left mx-5" >*** NOTE: <em> All product names, logos, and brands are property of their respective owners.<br> All company, product and service names used in this website are for identification purposes only.<br> Use of these names, logos, and brands does not imply endorsement.</em>
+      </p>
 
       <!-- copyright text -->
       <p>

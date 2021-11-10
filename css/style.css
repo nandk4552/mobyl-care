@@ -333,29 +333,29 @@ body {
   background-size: 1000px 100px;
 }
 #footer .wave#wave1 {
-  z-index: 1000;
+  z-index: 999;
   opacity: 0.7;
   bottom: 0;
   animation: animateWave 4s linear infinite;
 }
 #footer .wave#wave2 {
-  z-index: 999;
+  z-index: 998;
   opacity: 0.5;
   bottom: 10px;
-  animation: animateWave_02 4s linear infinite;
+  animation: animateWave_02 3.5s linear infinite;
 }
 
 #footer .wave#wave3 {
-  z-index: 1000;
+  z-index: 997;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWave 3s linear infinite;
 }
 #footer .wave#wave4 {
-  z-index: 999;
+  z-index: 996;
   opacity: 0.7;
   bottom: 20px;
-  animation: animateWave_02 3s linear infinite;
+  animation: animateWave_02 2.5s linear infinite;
 }
 
 /* ------Contact us page----- */
@@ -389,18 +389,22 @@ body {
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes slideInFromTop {
